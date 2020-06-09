@@ -1,0 +1,100 @@
+<html>
+<head>
+
+<title>ENCUESTA</title>
+</head>
+
+<body>
+<form action="mailto:leonardo.valenciarico@comunidad.sena.edu.co" method="post">
+	<h4>DATOS PERSONALES</h4>
+	
+	<table>
+		<TR>
+			<td align="right">Nombre:</td>
+			<td colspan="2"><input type="text" name="nombre" size="25"></td>
+			<td align="right" width="120" >Apellidos:</td>
+			<td><input type="text" name="apellidos" size="25"></td>
+		</TR>
+		<TR>
+			<td align="right">Oficina:</td>
+			<td colspan="2"><input type="text" name="oficina" size="25"></td>
+			<td align="right" >Dependencia</td>
+			<td>
+				<select name="dependencia">				
+					<option>Presidencia</option>
+					<option>Inform&aacute;tica</option>
+					<option>Planeaci&oacute;n</option>
+					<option>Comunicaciones</option>
+					<option>Financiera</option>
+					<option>administrativa</option>
+					<option>Otra</option>
+				</select>
+			</td>
+		</TR>
+		
+		<tr>			
+			<td align="right"><br>Sexo</td>
+			<pre>
+				<td align="left"><br><input type="radio" name="sexo" value="fememnino">F</td>
+				<td align="left"><br><input type="radio" name="sexo" value="masculino">M</td>
+			</pre>
+		</tr>
+		
+		<tr>
+			<td align="right">Edad</td>
+			<pre>
+				<td align="left"><input type="radio" name="edad" value="20">- de 20</td>
+				<td align="left"><input type="radio" name="edad" value="20-30">Entre 20 y 30</td>
+				<td align="left"><input type="radio" name="edad" value="30+">mas de 30</td>
+			</pre>
+		</tr>
+		
+		<tr>
+			<td colspan="2"><br>Nivel academico</td>
+		</tr>
+		
+		<tr>
+			<td colspan="2">Primaria
+			 <input type="checkbox" name="escolaridad" value="primaria">
+			</td>
+			<td colspan="2">Bachillerato
+			 <input type="checkbox" name="escolaridad" value="bachillerato">
+			</td>
+			<td colspan="2">Profesional
+			 <input type="checkbox" name="escolaridad" value="Profesional">
+			</td>
+		</tr>
+		
+	</table>
+	<br>
+	<br>
+	<hr width="98%" size="3" color="#666666" align="left">
+
+	<br>
+	<h4>SU OPINION DEL CURSO</h4>
+	<textarea name="opinion" value="" rows="3" cols="60"></textarea>
+	<br>
+	<br>
+		<hr width="98%" size="3" color="#666666" align="left">
+		<br><br>
+		<strong>NOTA</strong><br>
+		Deacuerdo a su desempe&ntilde;o, su nota deberia ser:
+		
+		<br>
+		<select name="nota">
+			<option selected>Uno</option>
+			<option>Dos</option>
+			<option>Tres</option>
+			<option>Cuatro</option>
+			<option>Cinco</option>
+		</select>
+		
+		<br><br>
+		<input type="submit" name="enviar" value="Enviar">
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<input type="reset" name="borrar" value="Borrar">	
+
+</form>
+</body>
+</html>
